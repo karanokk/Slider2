@@ -168,7 +168,14 @@ open class Slider2: UIControl {
     }
     
     private func firstLayout() {
+        if let thumbImage = thumbImage, thumbSize == .zero {
+            thumbSize = thumbImage.size
+        }
+        if let thumbImage2 = thumbImage2, thumb2Size == .zero {
+            thumb2Size = thumbImage2.size
+        }
         var containerWidth = frame.width // Fix missing container width at first layout.
+        
         if var minimumValueImage = minimumValueImage {
             let ratio = minimumValueImage.size.width / minimumValueImage.size.height
             containerWidth -= frame.height * ratio

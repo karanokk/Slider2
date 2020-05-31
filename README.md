@@ -38,6 +38,8 @@ Click "Files -> Swift Package Manager -> Add Package Dependency..." in Xcode's m
 let slider = Slider2()
 slider.minimumValue = 1
 slider.maximumValue = 10
+slider.thumbImage = UIImage(named: "thumb")
+slider.thumbImage2 = UIImage(named: "thumb2")
 slider.value = 3
 slider.value2 = 7
 slider.addTarget(self, action: #selector(valueChanged(slider:)), for: .valueChanged)
