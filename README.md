@@ -1,7 +1,7 @@
 # Slider2
 
 <p align="center">
-<a href="http://onevcat.github.io/Kingfisher/"><img src="https://img.shields.io/cocoapods/v/Slider2"></a>
+<a href="http://github.com/karanokk"><img src="https://img.shields.io/cocoapods/v/Slider2"></a>
 <a href="https://github.com/Carthage/Carthage/"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat"></a>
 <a href="https://swift.org/package-manager/"><img src="https://img.shields.io/badge/SPM-supported-DE5C43.svg?style=flat"></a>
 <a href="https://raw.githubusercontent.com/karanokk/Slider2/master/LICENSE"><img src="https://img.shields.io/cocoapods/l/Kingfisher.svg?style=flat"></a>

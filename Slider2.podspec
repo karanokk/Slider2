@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
     s.name         = "Slider2"
-    s.version      = "0.1.0"
+    s.version      = "0.1.1"
     s.summary      = "A slider with two value controls."
     s.description  = <<-DESC
-                    A slider with two value controls.
+                     A slider with two value controls.
                      DESC
 
     s.homepage     = "https://github.com/karanokk/Slider2"
