@@ -50,7 +50,7 @@ open class Slider2: UIControl {
     
     /// A Bool value indicating whether changes in the slider’s value generate continuous update events.
     @IBInspectable
-    open var isContinuous = true
+    open var isContinuous: Bool = true
     
     /// The image representing the slider’s minimum value.
     @IBInspectable
@@ -153,6 +153,9 @@ open class Slider2: UIControl {
         case .began:
             isMovingThumb = thumbView.frame.maxX >= p.x - containerView.frame.minX
         case .changed, .ended:
+            if !isContinuous && recognizer.state == .changed {
+                return
+            }
             let targetValue = minimumValue + Int(round(p.x / stepWidth))
             if isMovingThumb {
                 value = targetValue
