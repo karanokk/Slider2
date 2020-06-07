@@ -133,6 +133,12 @@ open class Slider2: UIControl {
     
     private let impact = UISelectionFeedbackGenerator()
     
+    open override var isEnabled: Bool {
+        didSet {
+            layer.opacity = isEnabled ? 1 : 0.5
+        }
+    }
+    
     public override func layoutSubviews() {
         super.layoutSubviews()
         if thumbView.superview == nil {
