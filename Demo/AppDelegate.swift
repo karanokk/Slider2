@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Demo
 //
-//  Created by byunfi on 2020/5/30.
+//  Created by karanokk on 2020/5/30.
 //  Copyright © 2020 byunfi. All rights reserved.
 //
 
